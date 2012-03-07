@@ -29,9 +29,30 @@
 		</dict>
 	</array>
 	<key>keywordsArray</key>
-	<array/>
+	<array>
+		<dict>
+			<key>beginString</key>
+			<string>^[\t ]*\w*[\t ]*:</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+	</array>
 	<key>numbersArray</key>
-	<array/>
+	<array>
+		<dict>
+			<key>beginString</key>
+			<string>\b\d*[\d\.]\d+\b
+</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>\b\d+\b</string>
+			<key>regularExpression</key>
+			<true/>
+		</dict>
+	</array>
 	<key>outlineMenuArray</key>
 	<array>
 		<dict>
@@ -60,9 +81,11 @@
 	<array>
 		<dict>
 			<key>beginString</key>
-			<string>[\t ]*\w*[\t ]*:</string>
-			<key>regularExpression</key>
-			<true/>
+			<string>false</string>
+		</dict>
+		<dict>
+			<key>beginString</key>
+			<string>true</string>
 		</dict>
 	</array>
 </dict>
